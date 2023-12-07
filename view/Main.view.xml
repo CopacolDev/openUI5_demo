@@ -17,7 +17,7 @@
 		<buttons>
 			<Button
 				id="helloButton"
-				text="{formatter: 'formatter.formatValue', path: 'i18n>btnText'}"
+				text="Teste botão UI5"
 				press="sayHello" />
 		</buttons>
 	</MessagePage>
