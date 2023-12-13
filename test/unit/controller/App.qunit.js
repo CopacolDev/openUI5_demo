@@ -1,2 +1,0 @@
-sap.ui.define(["pib/cafelandia/app/controller/Main.controller"],function(t){"use strict";QUnit.module("Sample App controller test");QUnit.test("The AppController class has a sayHello method",function(e){e.strictEqual(typeof t.prototype.sayHello,"function")})});
-//# sourceMappingURL=App.qunit.js.map
