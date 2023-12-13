@@ -6,7 +6,7 @@
 			"titleI18nKey": "Home",
 			"icon": "sap-icon://home",
 			"expanded": true,
-			"key": "",
+			"key": "home",
 			"items": []
 		},
 		{
@@ -17,32 +17,36 @@
 			"items": []
 		},
 		{
-			"titleI18nKey": "sideContentStatistics",
+			"titleI18nKey": "Serviços",
 			"icon": "sap-icon://line-chart",
 			"expanded": true,
 			"key": "statistics",
 			"items": [
 				{
-					"titleI18nKey": "sideContentUsageStatistics",
-					"key": "usageStatistics"
+					"titleI18nKey": "Escala louvor",
+					"key": "escalaLouvor"
 				},
 				{
-					"titleI18nKey": "sideContentOrderStatistics",
-					"key": "orderStatistics"
+					"titleI18nKey": "Escala lanche",
+					"key": "escalaLanche"
+				},
+				{
+					"titleI18nKey": "Check-in",
+					"key": "checkin"
 				}
 			]
 		}
 	],
 	"fixedNavigation": [
 		{
-			"titleI18nKey": "sideContentImportantLinks",
+			"titleI18nKey": "Links úteis",
 			"icon": "sap-icon://chain-link",
 			"key": "importantLinks"
 		},
 		{
-			"titleI18nKey": "sideContentLegal",
+			"titleI18nKey": "Sobre a PIB",
 			"icon": "sap-icon://compare",
-			"key": "legal"
+			"key": "sobre"
 		}
 	],
 	"masterSettings": [
