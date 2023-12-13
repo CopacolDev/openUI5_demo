@@ -1,2 +1,2 @@
-"use strict";sap.ui.define(["sap/ui/model/json/JSONModel","sap/ui/model/BindingMode","sap/ui/Device"],function(e,i,n){"use strict";var s={createDeviceModel:()=>{const s=new e(n);s.setDefaultBindingMode(i.OneWay);return s}};return s});
+sap.ui.define(["sap/ui/model/json/JSONModel","sap/ui/model/BindingMode","sap/ui/Device"],function(e,n,i){"use strict";return{createDeviceModel:function(){var t=new e(i);t.setDefaultBindingMode(n.OneWay);return t},createBlankJSONModel:function(){return new e}}});
 //# sourceMappingURL=models.js.map

@@ -4,15 +4,40 @@
 		<meta http-equiv="expires" content="0">
 		<meta charset="utf-8">
 
-		<title>UI5 Application: Demo page</title>
+		<title>PIB Cafelândia PR</title>
 
 		<script id="sap-ui-bootstrap" src="resources/sap-ui-custom.js" data-sap-ui-resourceroots="{
-				&quot;xcop.hello&quot;: &quot;./&quot;
-			}" data-sap-ui-theme="sap_horizon" data-sap-ui-oninit="module:sap/ui/core/ComponentSupport" data-sap-ui-async="true" data-sap-ui-compatversion="edge" data-sap-ui-frameoptions="trusted" data-sap-ui-xx-waitfortheme="true" data-sap-ui-xx-supportedlanguages="en,de"></script>
+				&quot;pib.cafelandia.app&quot;: &quot;./&quot;
+			}" data-sap-ui-theme="sap_horizon" data-sap-ui-oninit="module:sap/ui/core/ComponentSupport" data-sap-ui-async="true" data-sap-ui-compatversion="edge" data-sap-ui-frameoptions="trusted" data-sap-ui-xx-waitfortheme="true" data-sap-ui-xx-supportedlanguages="en,es,pt"></script>
+
+		<script>
+			function onLoad() {
+				// Obter o parâmetro de idioma da URL
+				var urlParams = new URLSearchParams(window.location.search);
+				var locale = urlParams.get("locale");
+
+				// Verificar se o parâmetro de idioma existe
+				if (!locale) {
+					// Se o parâmetro não existe, use o idioma padrão do sistema
+					locale = sap.ui.getCore().getConfiguration().getLanguage();
+				}
+
+				// Verificar se o idioma especificado é suportado
+				if (!/^en|es|pt$/.test(locale)) {
+					// Se o idioma não é suportado, use o idioma padrão
+					locale = sap.ui.getCore().getConfiguration().getLanguage();
+				}
+
+				// Definir o idioma
+				sap.ui.config.setLocale(locale);
+				}
+		
+			sap.ui.core.UIComponent.prototype.onAfterRendering = onLoad;
+		  </script>
 	</head>
 
 	<body class="sapUiBody">
-		<div data-sap-ui-component="" data-name="xcop.hello"></div>
+		<div data-sap-ui-component="" data-name="pib.cafelandia.app"></div>
 	
 
 </body></html>

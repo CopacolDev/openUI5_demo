@@ -2,7 +2,7 @@
 	"_version": "1.12.0",
 
 	"sap.app": {
-		"id": "xcop.hello",
+		"id": "pib.cafelandia.app",
 		"type": "application",
 		"i18n": "i18n/i18n.properties",
 		"title": "{{appTitle}}",
@@ -19,22 +19,31 @@
 			"desktop": true,
 			"tablet": true,
 			"phone": true
-		}
+		},
+		"supportedThemes": [
+			"sap_hcb",
+			"sap_bluecrystal",
+			"sap_fiori_3",
+			"sap_horizon"
+		]
 	},
 
 	"sap.ui5": {
 		"rootView": {
-			"viewName": "xcop.hello.view.App",
+			"viewName": "pib.cafelandia.app.view.App",
 			"type": "XML",
 			"async": true,
 			"id": "app"
 		},
 
 		"dependencies": {
-			"minUI5Version": "1.120.1",
+			"minUI5Version": "1.30",
 			"libs": {
 				"sap.ui.core": {},
-				"sap.m": {}
+				"sap.m": {},
+				"sap.tnt": {},
+				"sap.ui.layout": {},
+				"sap.uxap": {}
 			}
 		},
 
@@ -49,8 +58,12 @@
 			"i18n": {
 				"type": "sap.ui.model.resource.ResourceModel",
 				"settings": {
-					"bundleName": "xcop.hello.i18n.i18n"
+					"bundleName": "pib.cafelandia.app.i18n.i18n"
 				}
+			},
+			"side": {
+				"type": "sap.ui.model.json.JSONModel",
+				"uri": "model/sideContent.json"
 			}
 		},
 
@@ -58,8 +71,8 @@
 			"config": {
 				"routerClass": "sap.m.routing.Router",
 				"viewType": "XML",
-				"viewPath": "xcop.hello.view",
-				"controlId": "app",
+				"viewPath": "pib.cafelandia.app.view",
+				"controlId": "mainContents",
 				"controlAggregation": "pages",
 				"async": true
 			},
