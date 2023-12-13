@@ -1,0 +1,21 @@
+<mvc:View
+	controllerName="pib.cafelandia.app.controller.Main"
+	displayBlock="true"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core"
+	core:require="{
+		formatter: 'pib/cafelandia/app/model/formatter'
+	}">
+
+	
+	<MessagePage
+		title="Home"
+		text="texto aqui"
+		icon="sap-icon://accept"
+		id="page"
+		description="dfsdfd">
+		
+	</MessagePage>
+
+</mvc:View>
