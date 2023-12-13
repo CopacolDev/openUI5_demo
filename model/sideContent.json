@@ -3,7 +3,7 @@
 
 	"navigation": [
 		{
-			"titleI18nKey": "Home",
+			"titleI18nKey": "Principal",
 			"icon": "sap-icon://home",
 			"expanded": true,
 			"key": "home",
