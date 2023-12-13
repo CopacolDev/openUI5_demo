@@ -47,7 +47,9 @@
 					</layoutData>
 				</Button>
 				<Avatar
-							
+							id="avatarButton"
+							initials="VB"
+							visible="false"
 							src="./images/vb.jpg"
 							displaySize="XS"
 							showBorder="true"
