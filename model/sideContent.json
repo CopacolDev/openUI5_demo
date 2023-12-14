@@ -39,6 +39,11 @@
 	],
 	"fixedNavigation": [
 		{
+			"titleI18nKey": "Como chegar?",
+			"icon": "sap-icon://map-2",
+			"key": "map"
+		},
+		{
 			"titleI18nKey": "Links úteis",
 			"icon": "sap-icon://chain-link",
 			"key": "importantLinks"

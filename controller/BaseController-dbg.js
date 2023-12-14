@@ -86,7 +86,19 @@ sap.ui.define([
 
 		},
 		onLoginPress: function(){
-			
+			let oView = this.getView();
+			let oLoginButton = oView.byId("loginButton");
+			let oAvatarButton = oView.byId("avatarButton");
+
+			if(oLoginButton.getVisible()==true){
+				oLoginButton.setVisible(false);
+				oAvatarButton.setVisible(true);	
+			}else{
+				oLoginButton.setVisible(true);
+				oAvatarButton.setVisible(false);	
+			}
+
+
 		},
 		onLoadMenu: function(){
 			//debugger

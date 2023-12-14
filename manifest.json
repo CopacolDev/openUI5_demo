@@ -35,6 +35,13 @@
 			"async": true,
 			"id": "app"
 		},
+		"resources": {
+			"css": [
+			  {
+				"uri": "css/style.css"
+			  }
+			]
+		},
 
 		"dependencies": {
 			"minUI5Version": "1.30",

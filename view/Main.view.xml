@@ -2,20 +2,40 @@
 	controllerName="pib.cafelandia.app.controller.Main"
 	displayBlock="true"
 	xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns:core="sap.ui.core"
 	core:require="{
 		formatter: 'pib/cafelandia/app/model/formatter'
 	}">
 
-	
+	<Page showHeader="true" title="{i18n>home}" titleAlignment="Center" backgroundDesign="Transparent">
+
+		<l:VerticalLayout
+			class="sapUiContentPadding"
+			width="50%">
+			<l:content>
+				<core:HTML content='&lt;iframe src=&quot;https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d762.5267625569155!2d-53.32637300934478!3d-24.616480309579437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f24bb5ee5ae745%3A0xe9a7b519620f74c4!2sR.%20Alberto%20Tenfen%2C%20206%20-%20Centro%2C%20Cafel%C3%A2ndia%20-%20PR%2C%2085415-000!5e0!3m2!1spt-PT!2sbr!4v1702511548525!5m2!1spt-PT!2sbr&quot; width=&quot;600&quot; height=&quot;450&quot; style=&quot;border:0;&quot; allowfullscreen=&quot;&quot; loading=&quot;lazy&quot; referrerpolicy=&quot;no-referrer-when-downgrade&quot;&gt;&lt;/iframe&gt;'>
+				</core:HTML>
+			</l:content>
+		</l:VerticalLayout>
+
+		<!--<Carousel class="sapUiContentPadding" loop="true">
+			<Image src="https://lh3.googleusercontent.com/pw/ABLVV87U5OVf3Wolq_9495uchlDkYhejHBLilCH6zlQO5VaRJz_Mdou4GUDzpk7GiRX9CPoPutgDoT6gPQj05_1Bkw4BCu1QIlatVscsTGoOR0YbSD6HWlqIiJJ3S_yJ_oupQmUCIYdHG7M4Twpe0kU32lKhsuALGCpu12N-QbLJB6bhlPlPNiInqVlOK-3D6Au5UGZC8IjJWyoUxCZSfqPI8xdRzuF0v-_B7WQda4AnPZxEqXDWrSNCfR0vyFVspk-digBafU_8-9tuPgcJAc8ScEathE4iUnanPvqz5f-QMMQ8tACyV10ktz339mHVRES0KD27RisWSRevszn1fUgrmgcd19Aj0amdp2Y-S9R6nH2zkEQ3DMKy4HyR_qlh5mbXpERZcEd67KUCnFiXaoKIlwtGst5UzzGnjqot9aSMt7ZllQ0Olk_VDYZlLkWfX79O8AIxmSK88mAuSEFlwhQzw41kHj4w7A9SJidjewICALcJPQOd_-T_wjunA8EXQnkcSfwLTEJ5b9TFN74gcEzTvtgQ932BaQDc6Az9_TeWThmAQzPcGMkEOeAOY_G_6MtJbD9EolVnyo78FBZwJV7pfzoR0iMNqJ_UuvUXQKeKNPuapAjdC20bvu-p-kiBLcnA9-oYqGdwhP1eJxHkXB6XHl3BnBM_fCF_vr7s0C8_cZQPQG0lNA4J6wkYDY3u56hwEJbXqCRTqG26vnC1-1UXQ5IDvTcobAsrAHLnEkjMBVZiF2ab8HvXvX-cBbsZ8WMXq_ViebsjkCPsLYdRC4CtAo5emvCahnlYkVLuVPFrZUg-joBmuZy4hSg2YOd1D2gTVtSFgmfYdmwEx6iAB12SxzxR84TveI4bzbdEeaXxQutua1YPJ8Hia6l3rXm1FPX5_sZym-E=w1080-h720-s-no-gm?authuser=0" alt="Example picture of speakers" />
+			<Image src="./images/vb.jpg" alt="Example picture of speakers" />
+		</Carousel>-->
+	</Page>
+
+	<!--
 	<MessagePage
-		title="Home"
+		title="{i18n>home}"
 		text="texto aqui"
 		icon="sap-icon://accept"
 		id="page"
 		description="dfsdfd">
+
+	
 		
-	</MessagePage>
+	 </MessagePage>-->
 
 </mvc:View>

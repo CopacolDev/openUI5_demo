@@ -4,11 +4,10 @@
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns:tnt="sap.tnt">
 
-
-
 	<tnt:ToolPage
 		id="app"
-		class="sapUiDemoToolPage">
+		class="headerBackground">
+
 		<tnt:header>
 			<tnt:ToolHeader>
 				<Button
